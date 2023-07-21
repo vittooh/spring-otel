@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: "Saudacao-MS"
+  sleuth:
+    otel:
+      config:
+        trace-id-ratio-based: 1.0
+      exporter:
+        otlp:
+          endpoint: ${OTLP_URL}
